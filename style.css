@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* background-image: linear-gradient(rgb(111, 237, 111),rgb(232, 232, 113), pink); */
+    background-image: linear-gradient(to right, rgb(246, 43, 77), rgb(242, 175, 187));
+
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: .5vw;
+    background-image: linear-gradient(rgb(249, 182, 193), pink);
+    width: 561px;
+    height: 450px;
+    animation: trans 1.7s infinite alternate;
+    box-shadow: 0 0 1vw rgb(178, 92, 106);
+}
+
+@keyframes trans {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+    }
+
+}
+
+h2 {
+    font-size: 40px;
+    margin: 30px ;
+
+}
+
+textarea {
+    height: 200px;
+    width: 450px;
+    padding: .5vw;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid gray;
+    resize: none;
+
+}
+
+button {
+    margin: 1.4vw;
+    width: 450px;
+    padding: .5vw;
+    background-color: rgb(40, 245, 40);
+    border: .1vw solid rgb(1, 239, 1);
+    outline: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(2, 188, 2);
+
+}
+
+p {
+    font-size: 20px;
+    margin: 0 0 2vw;
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 80vw;
+        height: auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 6vw;
+        margin: 2vw;
+    }
+
+    textarea {
+        height: 30vw;
+        width: 60vw;
+        font-size: 4vw;
+        padding: 1vw;
+        margin-bottom: 2vw;
+    }
+
+    button {
+        width: 60vw;
+        padding: 2vw;
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 4vw;
+        margin: 2vw 0;
+    }
+}
